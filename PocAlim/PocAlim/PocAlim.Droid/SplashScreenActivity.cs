@@ -30,7 +30,7 @@ namespace PocAlim.Droid
             });
 
             startupWork.ContinueWith(t => {
-                StartActivity(new Intent(Application.Context, typeof(MainActivity)));
+                StartActivity(new Intent(Application.Context, typeof(MapActivity)));
             }, TaskScheduler.FromCurrentSynchronizationContext());
 
             startupWork.Start();

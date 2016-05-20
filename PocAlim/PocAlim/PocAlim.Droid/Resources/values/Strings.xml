@@ -2,4 +2,6 @@
 <resources>
 	<string name="hello">Hello this will be the map activity soon !</string>
 	<string name="app_name">PocAlim</string>
+  <string name="google_map_key">AIzaSyDS1U4QbN8EX9Q_qCXz-NNpyte-D1M4x8E</string>
+
 </resources>
