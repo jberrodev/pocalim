@@ -70,7 +70,7 @@ namespace PocAlim.Droid
             LatLng location = new LatLng(48.827338, 2.270700);
             CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
             builder.Target(location);
-            builder.Zoom(18);
+            builder.Zoom(12);
             CameraPosition cameraPosition = builder.Build();
             CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
 

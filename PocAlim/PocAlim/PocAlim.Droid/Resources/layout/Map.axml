@@ -13,10 +13,61 @@
         android:orientation="vertical"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent">
+        <LinearLayout
+            android:id="@+id/headLayout"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:weightSum="3">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:text="Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/settingsBtn"
+                    android:background="@drawable/roundBtnBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:text="@string/filtreBtnText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/filtreBtn"
+                    android:background="@drawable/filtreBtnBackground" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_weight="1">
+                <Button
+                    android:text="aR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/arBtn"
+                    android:background="@drawable/roundBtnBackground" />
+            </LinearLayout>
+        </LinearLayout>
         <Button
-            android:text="Button"
+            android:text="Rechercher"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1" />
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/searchBtn"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/roundBtnBackground" />
     </FrameLayout>
 </FrameLayout>
