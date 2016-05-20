@@ -12,6 +12,7 @@ using Android.Widget;
 using Android.Gms.Maps;
 using Android.Gms.Common;
 using Android.Util;
+using Android.Gms.Maps.Model;
 
 namespace PocAlim.Droid
 {
@@ -58,8 +59,23 @@ namespace PocAlim.Droid
         public void OnMapReady(GoogleMap googleMap)
         {
             gMap = googleMap;
+
+            startingZoom();
+            
+
         }
-       
+
+        private void startingZoom()
+        {
+            LatLng location = new LatLng(48.827338, 2.270700);
+            CameraPosition.Builder builder = CameraPosition.InvokeBuilder();
+            builder.Target(location);
+            builder.Zoom(18);
+            CameraPosition cameraPosition = builder.Build();
+            CameraUpdate cameraUpdate = CameraUpdateFactory.NewCameraPosition(cameraPosition);
+
+            gMap.MoveCamera(cameraUpdate);
+        }
 
         private bool TestIfGooglePlayServicesIsInstalled()
         {
